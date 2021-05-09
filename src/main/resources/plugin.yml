@@ -1,0 +1,9 @@
+name: MinecartManager
+version: 0
+author: moderator_man
+main: net.alphaplace.mm.MinecartManager
+commands:
+  mm:
+    description: The main MinecartManager command
+    default: op
+    permission: mm.admin
