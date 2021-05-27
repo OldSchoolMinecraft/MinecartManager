@@ -57,13 +57,13 @@ public class PlayerHandler extends PlayerListener
             event.setCancelled(true);
         }
 
-        if (event.getRightClicked() instanceof StorageMinecart && MinecartManager.instance.getConfiguration().getBoolean("normal-disabled", false))
+        if (event.getRightClicked() instanceof StorageMinecart && MinecartManager.instance.getConfiguration().getBoolean("chest-disabled", false))
         {
             event.getPlayer().sendMessage(ChatColor.RED + "Chest minecarts are disabled on this server!");
             event.setCancelled(true);
         }
 
-        if (event.getRightClicked() instanceof PoweredMinecart && MinecartManager.instance.getConfiguration().getBoolean("normal-disabled", false))
+        if (event.getRightClicked() instanceof PoweredMinecart && MinecartManager.instance.getConfiguration().getBoolean("furnace-disabled", false))
         {
             event.getPlayer().sendMessage(ChatColor.RED + "Furnace minecarts are disabled on this server!");
             event.setCancelled(true);
